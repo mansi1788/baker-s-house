@@ -87,7 +87,7 @@ span{
     display:none;
 }
 section{
-min-height: 100vh ;
+ min-height: 100vh ; 
 background: url(bakery\ bg3.jpg);
 background-position: center;
  background-size: cover; 
@@ -124,11 +124,157 @@ section .last {
    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
    text-transform: uppercase;
 }
+
+@media (min-width:1200px){
+    section{
+       width: 100%;
+    }
+}
+@media (max-width:992px)and(min-width:1199px){
+    section{
+       width: 50%;
+    }
+}
+@media (min-width: 992px){
+    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+      float: left;  
+    }
+    .col-lg-1 {
+      width: 8.33%;
+    }
+    .col-lg-2 {
+      width: 16.66%;
+    }
+    .col-lg-3 {
+      width: 25%;
+    }
+    .col-lg-4 {
+      width: 33.33%;
+    }
+    .col-lg-5 {
+      width: 41.66%;
+    }
+    .col-lg-6 {
+      width: 50%;
+    }
+    .col-lg-7 {
+      width: 58.33%;
+    }
+    .col-lg-8 {
+      width: 66.66%;
+    }
+    .col-lg-9 {
+      width: 74.99%;
+    }
+    .col-lg-10 {
+      width: 83.33%;
+    }
+    .col-lg-11 {
+      width: 91.66%;
+    }
+    .col-lg-12 {
+      width: 100%;
+    }
+  
+  }
+  @media (min-width: 950px)and(max-width:1192px){
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+      float: left;  
+      display: block;
+    }
+    .col-md-1 {
+      width: 8.33%;
+    }
+    .col-md-2 {
+      width: 16.66%;
+    }
+    .col-md-3 {
+      width: 25%;
+    }
+    .col-md-4 {
+      width: 33.33%;
+    }
+    .col-md-5 {
+      width: 41.66%;
+    }
+    .col-md-6 {
+      width: 50%;
+    }
+    .col-md-7 {
+      width: 58.33%;
+    }
+    .col-md-8 {
+      width: 66.66%;
+    }
+    .col-md-9 {
+      width: 74.99%;
+    }
+    .col-md-10 {
+      width: 83.33%;
+    }
+    .col-md-11 {
+      width: 91.66%;
+    }
+    .col-md-12 {
+      width: 100%;
+    }
+  
+  }
+  @media (min-width: 300px)and(max-width:949px){
+    .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+       float: left;   
+       display: block;
+    }
+    .col-sm-1 {
+      width: 8.33%;
+    }
+    .col-sm-2 {
+      width: 16.66%;
+    }
+    .col-sm-3 {
+      width: 25%;
+    }
+    .col-sm-4 {
+      width: 33.33%;
+    }
+    .col-sm-5 {
+      width: 41.66%;
+    }
+    .col-sm-6 {
+      width: 50%;
+    }
+    .col-sm-7 {
+      width: 58.33%;
+    }
+    .col-sm-8 {
+      width: 66.66%;
+    }
+    .col-sm-9 {
+      width: 74.99%;
+    }
+    .col-sm-10 {
+      width: 83.33%;
+    }
+    .col-sm-11 {
+      width: 91.66%;
+    }
+    .col-sm-12 {
+      width: 100%;
+    }
+  
+  }
+
 .items{
     padding-top: 10vh;
-    display: flex;
+    display: flex;  
 
 }
+@media(max-width:50%){
+    .items{
+        flex-wrap: wrap;
+    }
+}
+
 .items .cake{
     background-image: url(cake1.webp);
     width: 690px;
@@ -136,6 +282,7 @@ section .last {
     background-repeat: no-repeat;
     margin: 0 40px ;
     background-size: 420px 420px;
+    flex-wrap: wrap;
 }
 .items .bread{
     background-image: url(bread.jpg);
@@ -239,10 +386,18 @@ button{
 .cart{
     max-width: 92vw;
     margin: auto;
-    display: wrap;
+    display: wrap; 
     padding-bottom: 18vh;
     text-transform: uppercase;
+    /* flex-wrap: wrap; 
+    flex-direction: column;*/
 
+    }
+    @media(min-width:300px)and(max-width:949px){
+        .cart{
+            display: flex;
+            flex-direction: column;
+        }
     }
     .man{
         padding-bottom: 4vh;
@@ -307,7 +462,55 @@ button{
 }
 .line{
     padding: 0 3vh 3vh 3vh;
+} 
+@media(min-width){
+    section{
+        width:80%;
+
+    }
 }
+/* @media (min-width: 992px){ */
+    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+      float: left;  
+    }
+    .col-lg-1 {
+      width: 8.33%;
+    }
+    .col-lg-2 {
+      width: 16.66%;
+    }
+    .col-lg-3 {
+      width: 25%;
+    }
+    .col-lg-4 {
+      width: 33.33%;
+    }
+    .col-lg-5 {
+      width: 41.66%;
+    }
+    .col-lg-6 {
+      width: 50%;
+    }
+    .col-lg-7 {
+      width: 58.33%;
+    }
+    .col-lg-8 {
+      width: 66.66%;
+    }
+    .col-lg-9 {
+      width: 74.99%;
+    }
+    .col-lg-10 {
+      width: 83.33%;
+    }
+    .col-lg-11 {
+      width: 91.66%;
+    }
+    .col-lg-12 {
+      width: 100%;
+    }
+  
+  
 .content{
     padding-left:7vh ;
     padding-right: 7vh;
